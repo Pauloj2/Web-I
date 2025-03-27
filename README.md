@@ -10,6 +10,9 @@ Este repositório contém materiais, códigos e exercícios da disciplina **Web1
 
 📂 **Aulas e Materiais**
 - 📑 Introdução ao HTML e estrutura básica de uma página web
+    
+   <img src="https://github.com/user-attachments/assets/3b199ea9-2c6a-4d7a-acf9-e25d89379102" alt="design" align="right" width="300" height="250">
+
 - 🎨 Estilização com CSS: seletores, classes, IDs e layouts
 - ⚡ Introdução ao JavaScript: variáveis, funções e outros
 - 🐘 Introdução ao PHP: sintaxe básica, variáveis, funções e manipulação de formulários
