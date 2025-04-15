@@ -1,0 +1,40 @@
+.container{
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.container img{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+ul{
+    background: rgb(0, 0, 187);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+li{
+    display: inline-block;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+li A:hover{
+    background: #ccc;
+    color: black;
+}
+
+.login{
+    float: right;
+}
+.login a:hover{
+    background: white;
+    font-size: 15px;
+    border-radius: 10px;
+}

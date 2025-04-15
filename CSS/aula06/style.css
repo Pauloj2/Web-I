@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: rgb(254, 254, 254);
+}
+h1{
+    color: white;
+    border: 1px solid rgb(63, 63, 255);
+    border-radius: 30px;
+    text-align: center;
+    background: rgb(63, 63, 255);
+    padding: 20px;
+    font-family: "Bungee Spice", sans-serif;
+}
+
+p{
+    color: black;
+    text-align: justify;
+    text-indent: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.botao{
+    margin-left: 40%;
+    background: rgb(63, 63, 255);
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: rgba(63, 63, 255, 0.748);
+}
+
+.teste{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(166, 166, 255);
+    text-align: center;
+}
+a.botao1{
+    background-color: rgb(150, 150, 255);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+}
+a.botao1:hover{
+    background-color: rgba(150, 150, 255, 0.625);
+    color: rgb(68, 68, 68);
+    padding: 12px;
+    border: 2px solid rgba(0, 0, 139, 0.199);
+}
+
+a.botao2{
+    text-decoration: none;
+    padding: 10px;
+    border: 2px double rgb(255, 0, 0);
+    color: white;
+    background-color: rgba(255, 68, 0, 0.781);
+    border-radius: 10px;
+}
+a.botao2:hover{
+    text-decoration: underline;
+    padding: 8px;
+    border: 2px double rgb(255, 0, 0);
+    color: white;
+    background-color: rgba(255, 68, 0, 0.512);
+}
+
+a.botao3{
+    color: black;
+    text-decoration: none;
+
+}
+a.botao3:hover{
+    color: rgb(4, 0, 255);
+    border-bottom: 3px solid black;
+}
+
+a.botao4{
+    text-decoration: none;
+    color: orangered;
+}
+
+a.botao4:hover{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a.botao5{
+    text-decoration: none;
+    cursor: progress;
+    font-family: "Bungee Spice", sans-serif;
+}
