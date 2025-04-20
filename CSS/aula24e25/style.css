@@ -14,10 +14,21 @@ h1{
 
 .caixa{
     width: 30%;
-    height: 300px;
+    height: auto;
     background: white;
     box-shadow: 0 4px 8px 0 rgb(117, 117, 117);
     border-radius: 10px;
     text-align: center;
     padding: 10px;
+}
+
+.reduzido{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+}
+
+.caixa:hover .reduzido{
+    white-space: normal;
 }

@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 30px;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row; /* Altera para 'column' para ver diferença */
+    justify-content: space-around; /* Alinhamento horizontal */
+    align-items: center;           /* Alinhamento vertical */
+    flex-wrap: wrap;               /* Permite quebra de linha */
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .box {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 30px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    flex-grow: 1; /* Itens crescem proporcionalmente */
+    transition: transform 0.2s ease;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+  }
+  
