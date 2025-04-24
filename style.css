@@ -1,365 +1,296 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #F1EFE1;
-    color: #1C1B0B;
-    line-height: 1.6;
+  background: #F1EFE1;
+  color: #1C1B0B;
+  line-height: 1.6;
 }
 
-body {
-    background-color: #F1EFE1;
-    color: #1C1B0B;
-    line-height: 1.6;
-}
-/* Header */
 header {
-    background-color: #1C1B0B;
-    padding: 5px 20px;
-    height: 100px; /* altura maior pra caber a logo maior */
+  background: #1C1B0B;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* LOGO */
-.logo-container {
-    float: left;
-    height: 80px;
-    padding-top: 10px; /* centraliza verticalmente dentro do header */
-}
-
-.logo-img {
-    height: 70px; /* aumenta a imagem da logo */
-    vertical-align: middle;
-    float: left;
-}
-
-.logo-texto {
-    color: #B4D772;
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-.logo-texto span {
-    color: #FF6016;
-}
-
-/* MENU */
-nav {
-    float: right;
-    margin-top: 35px; /* alinha com a logo maior */
+.logo-imagem {
+  height: 70px;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin-left: 20px;
+nav a {
+  color: #F1EFE1;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #F1EFE1;
-    font-weight: 500;
+nav a:hover {
+  color: #FF6016;
 }
 
-nav ul li a:hover {
-    color: #FF6016;
-    font-size: 15px;
+.destaque {
+  background: url('img/feira.jpg') center/cover no-repeat;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Clear floats */
-header::after {
-    content: "";
-    display: block;
-    clear: both;
+.destaque::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(28, 27, 11, 0.6);
+  z-index: 0;
 }
 
-
-/* BANNER PRINCIPAL */
-.hero {
-    background-image: url('img/feira.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    position: relative;
-    text-align: center;
+.destaque-conteudo {
+  position: relative;
+  z-index: 1;
+  color: #F1EFE1;
+  text-align: center;
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(28, 27, 11, 0.6);
-    display: table;
+.texto-logo {
+  font-size: 36px;
+  color: #B4D772;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-family: 'Poppins', sans-serif;
 }
 
-.hero-content {
-    display: table-cell;
-    vertical-align: middle;
-    color: #F1EFE1;
-    padding: 20px;
+.texto-logo span {
+  color: #FF6016;
 }
 
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+.destaque-conteudo p {
+  font-size: 20px;
+  margin: 20px auto;
+  max-width: 800px;
 }
 
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.botoes {
+  margin-top: 30px;
 }
 
-.cta-buttons {
-    margin-top: 30px;
+.botao {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 0 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    margin: 0 10px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
+.botao-principal {
+  background: #FF6016;
+  color: #fff;
+  border: 2px solid #FF6016;
 }
 
-.btn-primary {
-    background-color: #FF6016;
-    color: #F1EFE1;
-    border: 2px solid #FF6016;
+.botao-principal:hover {
+  background: #B4D772;
+  border-color: #B4D772;
+  color: #1C1B0B;
 }
 
-.btn-secondary {
-    background-color: transparent;
-    color: #F1EFE1;
-    border: 2px solid #B4D772;
+.botao-secundario {
+  background: transparent;
+  color: #F1EFE1;
+  border: 2px solid #B4D772;
 }
 
-.btn-primary:hover {
-    background-color: #B4D772;
-    border-color: #B4D772;
+.botao-secundario:hover {
+  background: #B4D772;
+  color: #1C1B0B;
 }
 
-.btn-secondary:hover {
-    background-color: #B4D772;
-    color: #1C1B0B;
+.sobre {
+  background: #B4D772;
+  padding: 60px 20px;
 }
 
-/* SOBRE A FEIRA */
-.about {
-    background-color:  #B4D772;
-    padding: 60px 20px;
-    color: #1C1B0B;
+.conteudo-sobre {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.about-texto strong{
-    color: #FF6016;
+.texto-sobre {
+  flex: 1 1 55%;
+  font-size: 18px;
+  text-align: justify;
 }
 
-.about-texto {
-    float: left;
-    width: 55%;
-    font-size: 18px;
-    line-height: 1.8;
-    text-align: justify;
-    padding-top: 20px;
-    padding-right: 30px;
+.texto-sobre h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.about-texto h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
+.texto-sobre strong {
+  color: #FF6016;
 }
 
-.about-img-container {
-    float: right;
-    width: 40%;
-    text-align: center;
+.imagem-produtor {
+  display: block;
+  margin: auto;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.about-img {
-    width: 90%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+.servicos {
+  background: #F1EFE1;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-
-/* DESTAQUES */
-.features {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #F1EFE1;
+.lista-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.features h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #1C1B0B;
+.servico {
+  flex: 1 1 200px;
+  max-width: 250px;
+  padding: 20px;
 }
 
-.features-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.icone-servico {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #FF6016;
 }
 
-.feature-item {
-    display: inline-block;
-    width: 22%;
-    margin: 0 1%;
-    padding: 20px;
-    vertical-align: top;
-    min-height: 200px;
+.titulo-servico {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.feature-icon {
-    font-size: 40px;
-    margin-bottom: 15px;
-    color: #FF6016;
+.descricao-servico {
+  font-size: 16px;
 }
 
-.feature-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #1C1B0B;
+.beneficios {
+  background: #B4D772;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.feature-desc {
-    font-size: 16px;
-    color: #1C1B0B;
+.colunas-beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* BENEFÍCIOS */
-.benefits {
-    background-color: #B4D772;
-    padding: 60px 20px;
-    text-align: center;
+.coluna-beneficio {
+  background: #F1EFE1;
+  padding: 20px;
+  border-radius: 6px;
+  flex: 1 1 300px;
+  max-width: 45%;
 }
 
-.benefits h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #1C1B0B;
+.titulo-beneficio {
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-.benefits-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.texto-beneficio {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
-.benefit-column {
-    display: inline-block;
-    width: 45%;
-    margin: 0 2%;
-    padding: 20px;
-    vertical-align: top;
-    background-color: #F1EFE1;
-    border-radius: 6px;
-    min-height: 250px;
+.chamada-secundaria {
+  background: #FFC22E;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.benefit-title {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #1C1B0B;
+.chamada-secundaria h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-.benefit-text {
-    margin-bottom: 20px;
-}
-
-/* CHAMADA SECUNDÁRIA */
-.secondary-cta {
-    background-color: #FFC22E;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.secondary-cta h2 {
-    font-size: 28px;
-    margin-bottom: 25px;
-    color: #1C1B0B;
-}
-
-/* FOOTER */
 footer {
-    background-color: #1C1B0B;
-    color: #F1EFE1;
-    padding: 40px 20px;
-    text-align: center;
+  background: #1C1B0B;
+  color: #F1EFE1;
+  padding: 40px 20px;
 }
 
-.footer-columns {
-    max-width: 1200px;
-    margin: 0 auto 30px;
+.colunas-rodape {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.footer-column {
-    display: inline-block;
-    width: 30%;
-    margin: 0 1.5%;
-    vertical-align: top;
-    text-align: left;
+.coluna-rodape {
+  flex: 1 1 30%;
 }
 
-.footer-column h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #B4D772;
+.coluna-rodape h3 {
+  color: #B4D772;
+  margin-bottom: 15px;
 }
 
-.footer-links {
-    list-style: none;
+.links-rodape {
+  list-style: none;
+  padding-left: 0;
 }
 
-.footer-links li {
-    margin-bottom: 10px;
+.links-rodape li {
+  margin-bottom: 10px;
 }
 
-.footer-links a {
-    color: #F1EFE1;
-    text-decoration: none;
-    transition: color 0.3s;
+.links-rodape a {
+  color: #F1EFE1;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.footer-links a:hover {
-    color: #FFC22E;
+.links-rodape a:hover {
+  color: #FFC22E;
 }
 
-.social-icons {
-    margin-top: 20px;
+.redes-sociais {
+  margin-top: 10px;
 }
 
-.social-icons a {
-    color: #F1EFE1;
-    font-size: 20px;
-    margin: 0 10px;
-    text-decoration: none;
+.redes-sociais a {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #F1EFE1;
+  text-decoration: none;
 }
 
-.copyright {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #F1EFE1;
+.direitos {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
 }
