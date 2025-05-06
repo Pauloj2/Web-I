@@ -31,6 +31,12 @@ Este repositório contém materiais, códigos e exercícios da disciplina **Web1
 - Ferramentas de desenvolvimento como VS Code, Live Server e outras.
   
 ---
+TRABALHO PAGINA INICIAL
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dbc8bc0e-8b42-4ba8-8198-e35d623af032" alt="pgInicial" width="400">
+</p>
+
 📝 **Autor**: Paulo Junior R. 
 
 
